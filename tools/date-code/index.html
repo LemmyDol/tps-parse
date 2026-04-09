@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Code Predictor</title>
+    <style>
+      :root {
+        --bg: #f4f1ea;
+        --panel: #ffffff;
+        --text: #1e2a2f;
+        --muted: #5b6b73;
+        --accent: #1d6b57;
+        --accent-2: #124437;
+        --line: #d7dfdc;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: radial-gradient(
+          circle at 10% 10%,
+          #e6f1ec 0%,
+          var(--bg) 45%,
+          #efe7dc 100%
+        );
+        color: var(--text);
+        display: grid;
+        place-items: center;
+        padding: 20px;
+      }
+
+      .card {
+        width: min(960px, 100%);
+        background: var(--panel);
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        box-shadow: 0 10px 30px rgba(20, 44, 50, 0.08);
+        padding: 24px;
+      }
+
+      h1 {
+        margin: 0 0 8px;
+        font-size: 1.5rem;
+        letter-spacing: 0.2px;
+      }
+
+      p {
+        margin: 0 0 18px;
+        color: var(--muted);
+        line-height: 1.45;
+      }
+
+      .row {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        margin-bottom: 14px;
+      }
+
+      .actions {
+        display: flex;
+        gap: 10px;
+      }
+
+      .field {
+        display: grid;
+        gap: 6px;
+      }
+
+      label {
+        font-size: 0.9rem;
+        color: var(--muted);
+      }
+
+      input[type="date"] {
+        border: 1px solid var(--line);
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-size: 1rem;
+        color: var(--text);
+        background: #fff;
+      }
+
+      button {
+        border: 0;
+        border-radius: 8px;
+        background: linear-gradient(180deg, var(--accent), var(--accent-2));
+        color: #fff;
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 10px 16px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        filter: brightness(1.03);
+      }
+
+      .result {
+        margin-top: 8px;
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: #f9fcfb;
+      }
+
+      .result .label {
+        color: var(--muted);
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+      }
+
+      .result .value {
+        font-size: 1.7rem;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+      }
+
+      .result .formula {
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: var(--muted);
+        font-family: Consolas, "Courier New", monospace;
+        word-break: break-word;
+      }
+
+      /* ── Two-column panel layout ───────────────────────── */
+
+      .two-col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 14px;
+        margin-top: 14px;
+        align-items: start;
+      }
+
+      /* ── Forecast panel ────────────────────────────────── */
+
+      .forecast {
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      .forecast h2,
+      .actuals h2 {
+        margin: 0 0 10px;
+        font-size: 1rem;
+      }
+
+      .forecast table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.92rem;
+      }
+
+      .forecast th,
+      .forecast td {
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        padding: 7px 4px;
+      }
+
+      .forecast th:not(:first-child),
+      .forecast td:not(:first-child) {
+        text-align: right;
+      }
+
+      .diff-pos {
+        color: #1d6b57;
+        font-weight: 600;
+      }
+
+      .diff-neg {
+        color: #c0392b;
+        font-weight: 600;
+      }
+
+      /* ── Known Data panel ──────────────────────────────── */
+
+      .actuals {
+        padding: 14px;
+        border-radius: 10px;
+        border: 1px solid var(--line);
+        background: #fff;
+      }
+
+      .add-form {
+        display: flex;
+        gap: 6px;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+      }
+
+      .add-form input {
+        flex: 1 1 80px;
+        border: 1px solid var(--line);
+        border-radius: 6px;
+        padding: 7px 9px;
+        font-size: 0.88rem;
+        color: var(--text);
+        background: #fff;
+      }
+
+      .btn-sm {
+        border: 0;
+        border-radius: 6px;
+        background: linear-gradient(180deg, var(--accent), var(--accent-2));
+        color: #fff;
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 7px 11px;
+        cursor: pointer;
+        white-space: nowrap;
+        align-self: flex-start;
+      }
+
+      .btn-sm:hover {
+        filter: brightness(1.05);
+      }
+
+      .btn-outline {
+        display: block;
+        width: 100%;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: transparent;
+        color: var(--accent);
+        font-size: 0.82rem;
+        font-weight: 600;
+        padding: 6px 10px;
+        cursor: pointer;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      .btn-outline:hover {
+        background: #f0f8f5;
+      }
+
+      .data-table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.85rem;
+      }
+
+      .data-table th,
+      .data-table td {
+        text-align: left;
+        border-bottom: 1px solid var(--line);
+        padding: 6px 4px;
+      }
+
+      .data-table td:nth-child(2) {
+        text-align: right;
+      }
+
+      .tag {
+        display: inline-block;
+        font-size: 0.7rem;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+
+      .tag-seed {
+        background: #e8f0ef;
+        color: #4a7a70;
+      }
+
+      .tag-user {
+        background: #e8f2fb;
+        color: #1a5c9a;
+      }
+
+      .seed-row {
+        color: var(--muted);
+      }
+
+      .del-btn {
+        border: 0;
+        background: transparent;
+        color: #c0392b;
+        cursor: pointer;
+        font-size: 0.82rem;
+        padding: 2px 5px;
+        border-radius: 4px;
+      }
+
+      .del-btn:hover {
+        background: #fde8e5;
+      }
+
+      /* ── Footer note ───────────────────────────────────── */
+
+      .note {
+        margin-top: 16px;
+        font-size: 0.86rem;
+        color: var(--muted);
+        border-top: 1px dashed var(--line);
+        padding-top: 12px;
+      }
+
+      /* ── Responsive ────────────────────────────────────── */
+
+      @media (max-width: 760px) {
+        .row {
+          grid-template-columns: 1fr;
+        }
+
+        .actions {
+          width: 100%;
+          flex-direction: column;
+        }
+
+        button {
+          width: 100%;
+        }
+
+        .btn-sm {
+          width: auto;
+        }
+
+        .result .value {
+          font-size: 1.45rem;
+        }
+
+        .two-col {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Date Code Predictor</h1>
+      <p>
+        Enter a date to calculate a predicted code from the month-base plus
+        year-step model.
+      </p>
+
+      <div class="row">
+        <div class="field">
+          <label for="dateInput">Date</label>
+          <input id="dateInput" type="date" />
+        </div>
+        <div class="actions">
+          <button id="calcBtn" type="button">Get Code</button>
+          <button id="forecastBtn" type="button">Next 12 Month Ends</button>
+        </div>
+      </div>
+
+      <section class="result" aria-live="polite">
+        <div class="label">Predicted code</div>
+        <div id="codeOutput" class="value">-</div>
+        <div id="formulaOutput" class="formula">Formula: -</div>
+      </section>
+
+      <div class="two-col">
+        <!-- Forecast panel -->
+        <section class="forecast" aria-live="polite">
+          <h2>Forecast</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Month End</th>
+                <th>Predicted</th>
+                <th>Actual</th>
+                <th>Diff</th>
+              </tr>
+            </thead>
+            <tbody id="forecastOutput">
+              <tr>
+                <td colspan="4">Click "Next 12 Month Ends" to generate.</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <!-- Known Data panel -->
+        <section class="actuals">
+          <h2>Known Data</h2>
+          <form id="addDataForm" class="add-form">
+            <input id="addDateInput" type="date" title="Month-end date" required />
+            <input
+              id="addCodeInput"
+              type="number"
+              placeholder="Actual code"
+              required
+            />
+            <button class="btn-sm" type="submit">Add</button>
+          </form>
+          <button id="copyAiBtn" class="btn-outline" type="button">
+            Copy JSON for AI
+          </button>
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Date</th>
+                <th>Code</th>
+                <th>Source</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="actualsOutput"></tbody>
+          </table>
+        </section>
+      </div>
+
+      <div class="note">
+        Fitted predictor from historical data. Add new readings to the Known
+        Data panel and use "Copy JSON for AI" to export everything for review.
+      </div>
+    </main>
+
+    <script src="./date-code.js"></script>
+  </body>
+</html>
