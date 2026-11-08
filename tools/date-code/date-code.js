@@ -86,13 +86,11 @@
     return new Date(year, month1to12, 0).getDate();
   }
 
-  function codeForDate(date) {
-    const year = date.getFullYear();
-    const month = date.getMonth() + 1;
-    const day = date.getDate();
-
+  // Pure month-end value for a given year/month (the model is calibrated on
+  // month-end readings only). Returns an unrounded value so callers can
+  // interpolate before rounding.
+  function monthEndValue(year, month) {
     const yearOffset = year - 2023;
-    const eom = endOfMonthDay(year, month);
 
     // Base month profile + month-specific yearly drift.
     let value = base2023[month] + yearOffset * annualStep[month];
@@ -102,10 +100,36 @@
       yearOffset * yearDriftLinear[month] +
       yearOffset * yearOffset * yearDriftQuadratic[month];
 
-    // Small day adjustment away from end-of-month.
-    value += (day - eom) * 8;
+    return value;
+  }
 
-    return Math.round(value);
+  function prevMonth(year, month) {
+    return month === 1
+      ? { year: year - 1, month: 12 }
+      : { year, month: month - 1 };
+  }
+
+  function codeForDate(date) {
+    const year = date.getFullYear();
+    const month = date.getMonth() + 1;
+    const day = date.getDate();
+    const eom = endOfMonthDay(year, month);
+
+    const thisEnd = monthEndValue(year, month);
+
+    // Month-end (or later) resolves exactly to the calibrated value.
+    if (day >= eom) {
+      return Math.round(thisEnd);
+    }
+
+    // Intra-month: interpolate between the previous month-end (day 0) and this
+    // month-end (day eom). The daily slope varies ~200x across the year, so a
+    // flat per-day step is far off — anchoring to both month-ends tracks it.
+    const prev = prevMonth(year, month);
+    const prevEnd = monthEndValue(prev.year, prev.month);
+    const fraction = day / eom;
+
+    return Math.round(prevEnd + fraction * (thisEnd - prevEnd));
   }
 
   function formatNumber(n) {
@@ -277,12 +301,20 @@
     const linearDriftPart = yearOffset * yearDriftLinear[month];
     const quadraticDriftPart =
       yearOffset * yearOffset * yearDriftQuadratic[month];
-    const dayPart = (day - eom) * 8;
+    const drift = Math.round(annualPart + linearDriftPart + quadraticDriftPart);
 
     outputEl.textContent = formatNumber(codeForDate(date));
-    formulaEl.textContent =
-      `Formula: base ${baseValue} + year drift ${Math.round(annualPart + linearDriftPart + quadraticDriftPart)} ` +
-      `+ day adjust ${dayPart}`;
+
+    if (day >= eom) {
+      formulaEl.textContent = `Formula: month-end base ${baseValue} + year drift ${drift}`;
+    } else {
+      const prev = prevMonth(year, month);
+      const prevEnd = Math.round(monthEndValue(prev.year, prev.month));
+      const thisEnd = Math.round(monthEndValue(year, month));
+      formulaEl.textContent =
+        `Formula: interpolated day ${day}/${eom} between ` +
+        `${formatNumber(prevEnd)} (prev month-end) and ${formatNumber(thisEnd)} (this month-end)`;
+    }
   }
 
   function generateForecast() {

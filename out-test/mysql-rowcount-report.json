@@ -1,0 +1,1553 @@
+{
+  "database": "labelpro_restored",
+  "generated_at": "2026-04-26T05:53:07.674Z",
+  "table_count": 193,
+  "matches": 193,
+  "mismatches": 0,
+  "results": [
+    {
+      "csv_file": ".FF.csv",
+      "table_name": "ff",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": ".FOF.csv",
+      "table_name": "fof",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": ".TPS.FF.csv",
+      "table_name": "tps_ff",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": ".TPS.FOF.csv",
+      "table_name": "tps_fof",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AddressBook.csv",
+      "table_name": "addressbook",
+      "csv_rows": 1927,
+      "mysql_rows": 1927,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AddressBookOptions.csv",
+      "table_name": "addressbookoptions",
+      "csv_rows": 1963,
+      "mysql_rows": 1963,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AddressBookOptionTypes.csv",
+      "table_name": "addressbookoptiontypes",
+      "csv_rows": 7,
+      "mysql_rows": 7,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AddressBookTerms.csv",
+      "table_name": "addressbookterms",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AddressGlMargins.csv",
+      "table_name": "addressglmargins",
+      "csv_rows": 9,
+      "mysql_rows": 9,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AddressLocations.csv",
+      "table_name": "addresslocations",
+      "csv_rows": 9,
+      "mysql_rows": 9,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "AdminSundries.csv",
+      "table_name": "adminsundries",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "anniloxsetup.csv",
+      "table_name": "anniloxsetup",
+      "csv_rows": 85,
+      "mysql_rows": 85,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "BarcodeHeader.csv",
+      "table_name": "barcodeheader",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "BarcodeStatus.csv",
+      "table_name": "barcodestatus",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Branches.csv",
+      "table_name": "branches",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CarCostPartial.csv",
+      "table_name": "carcostpartial",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CNoteDetail.csv",
+      "table_name": "cnotedetail",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CNoteHeader.csv",
+      "table_name": "cnoteheader",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CoatingSetup.csv",
+      "table_name": "coatingsetup",
+      "csv_rows": 12,
+      "mysql_rows": 12,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Colour.csv",
+      "table_name": "colour",
+      "csv_rows": 11,
+      "mysql_rows": 11,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Cores.csv",
+      "table_name": "cores",
+      "csv_rows": 39,
+      "mysql_rows": 39,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Cost Centres.csv",
+      "table_name": "cost_centres",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CostingTimeCapture.csv",
+      "table_name": "costingtimecapture",
+      "csv_rows": 47846,
+      "mysql_rows": 47846,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CParam.csv",
+      "table_name": "cparam",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CylinderList.csv",
+      "table_name": "cylinderlist",
+      "csv_rows": 63,
+      "mysql_rows": 63,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "CylinderPrintMachine.csv",
+      "table_name": "cylinderprintmachine",
+      "csv_rows": 118,
+      "mysql_rows": 118,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DataLocation.csv",
+      "table_name": "datalocation",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DefaultDiscounts.csv",
+      "table_name": "defaultdiscounts",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DefaultHours.csv",
+      "table_name": "defaulthours",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DeliveryMethods.csv",
+      "table_name": "deliverymethods",
+      "csv_rows": 10,
+      "mysql_rows": 10,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DelNoteDetail.csv",
+      "table_name": "delnotedetail",
+      "csv_rows": 8,
+      "mysql_rows": 8,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DelNoteHeader.csv",
+      "table_name": "delnoteheader",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DelSet.csv",
+      "table_name": "delset",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Dielist - Copy 05042019 befor all repeats has been zerod.csv",
+      "table_name": "dielist_copy_05042019_befor_all_repeats_has_been_zerod",
+      "csv_rows": 410,
+      "mysql_rows": 410,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Dielist.csv",
+      "table_name": "dielist",
+      "csv_rows": 856,
+      "mysql_rows": 856,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DieListPermitations.csv",
+      "table_name": "dielistpermitations",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DieListService.csv",
+      "table_name": "dielistservice",
+      "csv_rows": 53307,
+      "mysql_rows": 53307,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DieListServiceHistory.csv",
+      "table_name": "dielistservicehistory",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DieManager.csv",
+      "table_name": "diemanager",
+      "csv_rows": 41,
+      "mysql_rows": 41,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DieManaGerPrintMc.csv",
+      "table_name": "diemanagerprintmc",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DirectCosts.csv",
+      "table_name": "directcosts",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DownTimes.csv",
+      "table_name": "downtimes",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DSTMP001.csv",
+      "table_name": "dstmp001",
+      "csv_rows": 53593,
+      "mysql_rows": 53593,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "DSTMP002.csv",
+      "table_name": "dstmp002",
+      "csv_rows": 110960,
+      "mysql_rows": 110960,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Esta.csv",
+      "table_name": "esta",
+      "csv_rows": 150148,
+      "mysql_rows": 150148,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Estimates.csv",
+      "table_name": "estimates",
+      "csv_rows": 48189,
+      "mysql_rows": 48189,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "EstPrintHist.csv",
+      "table_name": "estprinthist",
+      "csv_rows": 97284,
+      "mysql_rows": 97284,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ExportHeader.csv",
+      "table_name": "exportheader",
+      "csv_rows": 8,
+      "mysql_rows": 8,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ExportsDetail.csv",
+      "table_name": "exportsdetail",
+      "csv_rows": 17060,
+      "mysql_rows": 17060,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "FixedCostsGroups.csv",
+      "table_name": "fixedcostsgroups",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "FixedCostsItems.csv",
+      "table_name": "fixedcostsitems",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "FixedCostsItemsHistory.csv",
+      "table_name": "fixedcostsitemshistory",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "GlCodes.csv",
+      "table_name": "glcodes",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "GLCodesHistory.csv",
+      "table_name": "glcodeshistory",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "GrnQcLkp.csv",
+      "table_name": "grnqclkp",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "GrnQcLkp2.csv",
+      "table_name": "grnqclkp2",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InkSetup - Copy 25042018.csv",
+      "table_name": "inksetup_copy_25042018",
+      "csv_rows": 1125,
+      "mysql_rows": 1125,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InkSetup - Copy04052019.csv",
+      "table_name": "inksetup_copy04052019",
+      "csv_rows": 1182,
+      "mysql_rows": 1182,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InkSetup.csv",
+      "table_name": "inksetup",
+      "csv_rows": 1823,
+      "mysql_rows": 1823,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InkSetup123.csv",
+      "table_name": "inksetup123",
+      "csv_rows": 773,
+      "mysql_rows": 773,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InkSetup16072014 befor price inc.csv",
+      "table_name": "inksetup16072014_befor_price_inc",
+      "csv_rows": 773,
+      "mysql_rows": 773,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InProcessChks.csv",
+      "table_name": "inprocesschks",
+      "csv_rows": 27683,
+      "mysql_rows": 27683,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InProcessChks2.csv",
+      "table_name": "inprocesschks2",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "INProcessMAtl.csv",
+      "table_name": "inprocessmatl",
+      "csv_rows": 63962,
+      "mysql_rows": 63962,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InvDelNotes.csv",
+      "table_name": "invdelnotes",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InvoiceDetail.csv",
+      "table_name": "invoicedetail",
+      "csv_rows": 5,
+      "mysql_rows": 5,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "InvoiceHeader.csv",
+      "table_name": "invoiceheader",
+      "csv_rows": 9,
+      "mysql_rows": 9,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ItemCodeManager.csv",
+      "table_name": "itemcodemanager",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ItemCodeMngrLink.csv",
+      "table_name": "itemcodemngrlink",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "JobConfirmation.csv",
+      "table_name": "jobconfirmation",
+      "csv_rows": 37986,
+      "mysql_rows": 37986,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "JobConWip.csv",
+      "table_name": "jobconwip",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "JobWipNotes.csv",
+      "table_name": "jobwipnotes",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "JobWipStatus.csv",
+      "table_name": "jobwipstatus",
+      "csv_rows": 11,
+      "mysql_rows": 11,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "LeadTimes.csv",
+      "table_name": "leadtimes",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "MessageBoard.csv",
+      "table_name": "messageboard",
+      "csv_rows": 27388,
+      "mysql_rows": 27388,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "MessageBoard123.csv",
+      "table_name": "messageboard123",
+      "csv_rows": 17985,
+      "mysql_rows": 17985,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "MessageBoardArc.csv",
+      "table_name": "messageboardarc",
+      "csv_rows": 19609,
+      "mysql_rows": 19609,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "OpCodeNotes.csv",
+      "table_name": "opcodenotes",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "OpCodeOperators.csv",
+      "table_name": "opcodeoperators",
+      "csv_rows": 42,
+      "mysql_rows": 42,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "OpCodes.csv",
+      "table_name": "opcodes",
+      "csv_rows": 5,
+      "mysql_rows": 5,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Operators.csv",
+      "table_name": "operators",
+      "csv_rows": 38,
+      "mysql_rows": 38,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Outwsetup.csv",
+      "table_name": "outwsetup",
+      "csv_rows": 13,
+      "mysql_rows": 13,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PackingMethods.csv",
+      "table_name": "packingmethods",
+      "csv_rows": 9,
+      "mysql_rows": 9,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PackingMethodsChild.csv",
+      "table_name": "packingmethodschild",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PackLabels.csv",
+      "table_name": "packlabels",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PackLabelsDet.csv",
+      "table_name": "packlabelsdet",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Packmat.csv",
+      "table_name": "packmat",
+      "csv_rows": 8,
+      "mysql_rows": 8,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PalParts.csv",
+      "table_name": "palparts",
+      "csv_rows": 7,
+      "mysql_rows": 7,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PaperAdhesives.csv",
+      "table_name": "paperadhesives",
+      "csv_rows": 7,
+      "mysql_rows": 7,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PaperWidth.csv",
+      "table_name": "paperwidth",
+      "csv_rows": 1142,
+      "mysql_rows": 1142,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PapSet.csv",
+      "table_name": "papset",
+      "csv_rows": 118,
+      "mysql_rows": 118,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "pasCfg.csv",
+      "table_name": "pascfg",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "pasCfgGrn.csv",
+      "table_name": "pascfggrn",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PMIOutwork.csv",
+      "table_name": "pmioutwork",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PmiSubFoil.csv",
+      "table_name": "pmisubfoil",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PrintAttachments.csv",
+      "table_name": "printattachments",
+      "csv_rows": 13,
+      "mysql_rows": 13,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Printcc.csv",
+      "table_name": "printcc",
+      "csv_rows": 11,
+      "mysql_rows": 11,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PrintCCWaste.csv",
+      "table_name": "printccwaste",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PrintLedger.csv",
+      "table_name": "printledger",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PrintShifts.csv",
+      "table_name": "printshifts",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "PrintSpeed.csv",
+      "table_name": "printspeed",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItem - Copy 14082017.csv",
+      "table_name": "proditem_copy_14082017",
+      "csv_rows": 4710,
+      "mysql_rows": 4710,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItem.csv",
+      "table_name": "proditem",
+      "csv_rows": 15342,
+      "mysql_rows": 15342,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemCat.csv",
+      "table_name": "proditemcat",
+      "csv_rows": 27,
+      "mysql_rows": 27,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemChild.csv",
+      "table_name": "proditemchild",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemFoil.csv",
+      "table_name": "proditemfoil",
+      "csv_rows": 202,
+      "mysql_rows": 202,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemHistory.csv",
+      "table_name": "proditemhistory",
+      "csv_rows": 69131,
+      "mysql_rows": 69131,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemHistory27072016.csv",
+      "table_name": "proditemhistory27072016",
+      "csv_rows": 9513,
+      "mysql_rows": 9513,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemInk.csv",
+      "table_name": "proditemink",
+      "csv_rows": 41299,
+      "mysql_rows": 41299,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemPrice.csv",
+      "table_name": "proditemprice",
+      "csv_rows": 14,
+      "mysql_rows": 14,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemScreening.csv",
+      "table_name": "proditemscreening",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemScreenInk.csv",
+      "table_name": "proditemscreenink",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemSubItem.csv",
+      "table_name": "proditemsubitem",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdItemSubsProd.csv",
+      "table_name": "proditemsubsprod",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdMarginType.csv",
+      "table_name": "prodmargintype",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdMngr.csv",
+      "table_name": "prodmngr",
+      "csv_rows": 2304,
+      "mysql_rows": 2304,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProdPlates.csv",
+      "table_name": "prodplates",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProductItemContractPriceBreak.csv",
+      "table_name": "productitemcontractpricebreak",
+      "csv_rows": 8,
+      "mysql_rows": 8,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProductItemPriceBreak.csv",
+      "table_name": "productitempricebreak",
+      "csv_rows": 43,
+      "mysql_rows": 43,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ProItemSubsDie.csv",
+      "table_name": "proitemsubsdie",
+      "csv_rows": 689,
+      "mysql_rows": 689,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Ratesusers.csv",
+      "table_name": "ratesusers",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "RatesWages.csv",
+      "table_name": "rateswages",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ReportsDetail.csv",
+      "table_name": "reportsdetail",
+      "csv_rows": 289,
+      "mysql_rows": 289,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ReportsMain.csv",
+      "table_name": "reportsmain",
+      "csv_rows": 23,
+      "mysql_rows": 23,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "representatives.csv",
+      "table_name": "representatives",
+      "csv_rows": 27,
+      "mysql_rows": 27,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Reproduction.csv",
+      "table_name": "reproduction",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "ReproReq.csv",
+      "table_name": "reproreq",
+      "csv_rows": 7,
+      "mysql_rows": 7,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "RepsBudget.csv",
+      "table_name": "repsbudget",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "rewccnt.csv",
+      "table_name": "rewccnt",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "RewindLedger.csv",
+      "table_name": "rewindledger",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "RptPrntDst.csv",
+      "table_name": "rptprntdst",
+      "csv_rows": 213,
+      "mysql_rows": 213,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "SalesOrder.csv",
+      "table_name": "salesorder",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "SalesOrderDetail.csv",
+      "table_name": "salesorderdetail",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "SlsOrdDetBkdn.csv",
+      "table_name": "slsorddetbkdn",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StkMasterDependants.csv",
+      "table_name": "stkmasterdependants",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StkMasterWHouse.csv",
+      "table_name": "stkmasterwhouse",
+      "csv_rows": 7200,
+      "mysql_rows": 7200,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StkProcessMatl.csv",
+      "table_name": "stkprocessmatl",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StkSaleMargin.csv",
+      "table_name": "stksalemargin",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StkWeightProcess.csv",
+      "table_name": "stkweightprocess",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StmCcLink.csv",
+      "table_name": "stmcclink",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StmSerialAct.csv",
+      "table_name": "stmserialact",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockAdjustments.csv",
+      "table_name": "stockadjustments",
+      "csv_rows": 16702,
+      "mysql_rows": 16702,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockForecast.csv",
+      "table_name": "stockforecast",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockGroups.csv",
+      "table_name": "stockgroups",
+      "csv_rows": 6,
+      "mysql_rows": 6,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockMaster.csv",
+      "table_name": "stockmaster",
+      "csv_rows": 8093,
+      "mysql_rows": 8093,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockMasterOptions.csv",
+      "table_name": "stockmasteroptions",
+      "csv_rows": 7508,
+      "mysql_rows": 7508,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockMasterProcess.csv",
+      "table_name": "stockmasterprocess",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockMasterSerial.csv",
+      "table_name": "stockmasterserial",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockPrice.csv",
+      "table_name": "stockprice",
+      "csv_rows": 8164,
+      "mysql_rows": 8164,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockPriceDetail.csv",
+      "table_name": "stockpricedetail",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockPriceSell.csv",
+      "table_name": "stockpricesell",
+      "csv_rows": 15700,
+      "mysql_rows": 15700,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockProcessDetail.csv",
+      "table_name": "stockprocessdetail",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockProcessHeader.csv",
+      "table_name": "stockprocessheader",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockTake.csv",
+      "table_name": "stocktake",
+      "csv_rows": 237,
+      "mysql_rows": 237,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockTakeDetail.csv",
+      "table_name": "stocktakedetail",
+      "csv_rows": 86224,
+      "mysql_rows": 86224,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockTakeDetailBkdn.csv",
+      "table_name": "stocktakedetailbkdn",
+      "csv_rows": 101522,
+      "mysql_rows": 101522,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "StockUOM.csv",
+      "table_name": "stockuom",
+      "csv_rows": 5,
+      "mysql_rows": 5,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "SubstratesCalc.csv",
+      "table_name": "substratescalc",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "SubstratesDetail.csv",
+      "table_name": "substratesdetail",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "SysDataValidate.csv",
+      "table_name": "sysdatavalidate",
+      "csv_rows": 106327,
+      "mysql_rows": 106327,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TotalCosts.csv",
+      "table_name": "totalcosts",
+      "csv_rows": 1,
+      "mysql_rows": 1,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TranHeadConvert.csv",
+      "table_name": "tranheadconvert",
+      "csv_rows": 43102,
+      "mysql_rows": 43102,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TransBackOrder.csv",
+      "table_name": "transbackorder",
+      "csv_rows": 1300,
+      "mysql_rows": 1300,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TransBudMargin.csv",
+      "table_name": "transbudmargin",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TransDetail.csv",
+      "table_name": "transdetail",
+      "csv_rows": 279615,
+      "mysql_rows": 279615,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TransDetailBkdn.csv",
+      "table_name": "transdetailbkdn",
+      "csv_rows": 64162,
+      "mysql_rows": 64162,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "TransHeader.csv",
+      "table_name": "transheader",
+      "csv_rows": 96660,
+      "mysql_rows": 96660,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarActPack.csv",
+      "table_name": "varactpack",
+      "csv_rows": 31023,
+      "mysql_rows": 31023,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarActRaws.csv",
+      "table_name": "varactraws",
+      "csv_rows": 7934,
+      "mysql_rows": 7934,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarAud.csv",
+      "table_name": "varaud",
+      "csv_rows": 687607,
+      "mysql_rows": 687607,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarFoil.csv",
+      "table_name": "varfoil",
+      "csv_rows": 1222,
+      "mysql_rows": 1222,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Variantqtys.csv",
+      "table_name": "variantqtys",
+      "csv_rows": 43515,
+      "mysql_rows": 43515,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Variants - Copy.csv",
+      "table_name": "variants_copy",
+      "csv_rows": 28740,
+      "mysql_rows": 28740,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Variants.csv",
+      "table_name": "variants",
+      "csv_rows": 76328,
+      "mysql_rows": 76328,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Variants0302.csv",
+      "table_name": "variants0302",
+      "csv_rows": 53593,
+      "mysql_rows": 53593,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarInk - 10052017.csv",
+      "table_name": "varink_10052017",
+      "csv_rows": 59015,
+      "mysql_rows": 59015,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarInk.csv",
+      "table_name": "varink",
+      "csv_rows": 316236,
+      "mysql_rows": 316236,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarOutwork.csv",
+      "table_name": "varoutwork",
+      "csv_rows": 21,
+      "mysql_rows": 21,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarProdNotes.csv",
+      "table_name": "varprodnotes",
+      "csv_rows": 20,
+      "mysql_rows": 20,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarProduction old.csv",
+      "table_name": "varproduction_old",
+      "csv_rows": 972,
+      "mysql_rows": 972,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarProduction.csv",
+      "table_name": "varproduction",
+      "csv_rows": 536,
+      "mysql_rows": 536,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarProductionH.csv",
+      "table_name": "varproductionh",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarRepro.csv",
+      "table_name": "varrepro",
+      "csv_rows": 4,
+      "mysql_rows": 4,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarScreening.csv",
+      "table_name": "varscreening",
+      "csv_rows": 12,
+      "mysql_rows": 12,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarScreenInk.csv",
+      "table_name": "varscreenink",
+      "csv_rows": 2,
+      "mysql_rows": 2,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarSubFoil.csv",
+      "table_name": "varsubfoil",
+      "csv_rows": 0,
+      "mysql_rows": 0,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "varsubsdie.csv",
+      "table_name": "varsubsdie",
+      "csv_rows": 8592,
+      "mysql_rows": 8592,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "varsubsproducts - 10052017.csv",
+      "table_name": "varsubsproducts_10052017",
+      "csv_rows": 32924,
+      "mysql_rows": 32924,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "varsubsproducts.csv",
+      "table_name": "varsubsproducts",
+      "csv_rows": 152428,
+      "mysql_rows": 152428,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "VarTimesheet.csv",
+      "table_name": "vartimesheet",
+      "csv_rows": 46106,
+      "mysql_rows": 46106,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "Warehouse.csv",
+      "table_name": "warehouse",
+      "csv_rows": 24,
+      "mysql_rows": 24,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "WarehouseTfrDetail.csv",
+      "table_name": "warehousetfrdetail",
+      "csv_rows": 4,
+      "mysql_rows": 4,
+      "delta": 0,
+      "status": "match"
+    },
+    {
+      "csv_file": "WarehouseTransfer.csv",
+      "table_name": "warehousetransfer",
+      "csv_rows": 3,
+      "mysql_rows": 3,
+      "delta": 0,
+      "status": "match"
+    }
+  ]
+}

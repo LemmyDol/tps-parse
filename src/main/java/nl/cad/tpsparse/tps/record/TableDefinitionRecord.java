@@ -169,17 +169,24 @@ public class TableDefinitionRecord {
             return rx.binaryCodedDecimal(len, field.getBcdLengthOfElement(), field.getBcdDigitsAfterDecimalPoint());
         case 0x12:
             // Fixed Length String
-            return rx.fixedLengthString(len, stringEncoding);
+            return sanitizeString(rx.fixedLengthString(len, stringEncoding));
         case 0x13:
-            return rx.zeroTerminatedString(stringEncoding);
+            return sanitizeString(rx.zeroTerminatedString(len, stringEncoding));
         case 0x14:
-            return rx.pascalString(stringEncoding);
+            return sanitizeString(rx.pascalString(len, stringEncoding));
         case 0x16:
             // Group (an overlay on top of existing data, can be anything).
             return rx.readBytes(len);
         default:
             throw new IllegalArgumentException("Unsupported type " + type + " (" + len + ")");
         }
+    }
+
+    private String sanitizeString(String value) {
+        if (value == null || value.isEmpty()) {
+            return value;
+        }
+        return value.replace("\u0000", "");
     }
 
     private void assertEqual(int ref, int value) {

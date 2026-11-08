@@ -1,0 +1,29 @@
+﻿Total CSVs: 193
+Valid with data: 148
+Header-only: 45
+Issues: 0
+
+Issue files:
+None
+
+Top files by row count:
+- VarAud.csv | columns=6 | rows=687607
+- VarInk.csv | columns=15 | rows=316236
+- TransDetail.csv | columns=57 | rows=279615
+- varsubsproducts.csv | columns=47 | rows=152428
+- Esta.csv | columns=8 | rows=150148
+- Variants.csv | columns=363 | rows=127976
+- DSTMP002.csv | columns=351 | rows=110960
+- SysDataValidate.csv | columns=14 | rows=106327
+- StockTakeDetailBkdn.csv | columns=11 | rows=101522
+- EstPrintHist.csv | columns=8 | rows=97284
+- TransHeader.csv | columns=48 | rows=96660
+- StockTakeDetail.csv | columns=19 | rows=86224
+- ProdItemHistory.csv | columns=18 | rows=69131
+- TransDetailBkdn.csv | columns=20 | rows=64162
+- INProcessMAtl.csv | columns=9 | rows=63962
+- VarInk - 10052017.csv | columns=15 | rows=59015
+- Variants0302.csv | columns=324 | rows=53593
+- DSTMP001.csv | columns=318 | rows=53593
+- DieListService.csv | columns=6 | rows=53307
+- Estimates.csv | columns=40 | rows=48189

@@ -63,6 +63,30 @@ public class RandomAccessTest {
     }
 
     @Test
+    public void shouldReadZeroTerminatedStringWithinFieldLength() {
+        RandomAccess rx = new RandomAccess(new byte[] { 0x41, 0x42, 0x43, 0x44 });
+        assertEquals("ABCD", rx.zeroTerminatedString(4, Charset.forName("ISO-8859-1")));
+    }
+
+    @Test
+    public void shouldStopZeroTerminatedStringWithinFieldLength() {
+        RandomAccess rx = new RandomAccess(new byte[] { 0x41, 0x42, 0x00, 0x44 });
+        assertEquals("AB", rx.zeroTerminatedString(4, Charset.forName("ISO-8859-1")));
+    }
+
+    @Test
+    public void shouldReadPascalStringWithinFieldLength() {
+        RandomAccess rx = new RandomAccess(new byte[] { 0x03, 0x41, 0x42, 0x43, 0x44 });
+        assertEquals("ABC", rx.pascalString(5, Charset.forName("ISO-8859-1")));
+    }
+
+    @Test
+    public void shouldClampPascalStringLengthToFieldLength() {
+        RandomAccess rx = new RandomAccess(new byte[] { 0x05, 0x41, 0x42, 0x43 });
+        assertEquals("ABC", rx.pascalString(4, Charset.forName("ISO-8859-1")));
+    }
+
+    @Test
     public void shouldToHex() {
         assertEquals("0000 : 20 21 22 00 23 \n", new RandomAccess(new byte[] { 0x20, 0x21, 0x22, 0x00, 0x23 }).toHex());
     }

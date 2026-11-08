@@ -234,6 +234,22 @@ public class RandomAccess {
     }
 
     /**
+     * Reads a zero-terminated string within a fixed-size field.
+     * The reader advances by the full field length.
+     * @param maxLen the fixed field length.
+     * @param charset the charset.
+     * @return decoded string up to first zero byte.
+     */
+    public String zeroTerminatedString(int maxLen, Charset charset) {
+        byte[] bytes = readBytes(maxLen);
+        int end = 0;
+        while (end < bytes.length && bytes[end] != 0) {
+            end++;
+        }
+        return new String(bytes, 0, end, charset);
+    }
+
+    /**
      * pascal strings have their length encoded in the first byte.
      * @return the string.
      */
@@ -248,6 +264,24 @@ public class RandomAccess {
             out.write(leByte());
         }
         return new String(out.toByteArray(), charset);
+    }
+
+    /**
+     * Reads a pascal string within a fixed-size field.
+     * The reader advances by the full field length.
+     * @param maxLen the fixed field length.
+     * @param charset the charset.
+     * @return decoded string with length clamped to available field bytes.
+     */
+    public String pascalString(int maxLen, Charset charset) {
+        byte[] bytes = readBytes(maxLen);
+        if (bytes.length == 0) {
+            return "";
+        }
+        int declaredLen = bytes[0] & 0xFF;
+        int available = Math.max(0, bytes.length - 1);
+        int strLen = Math.min(declaredLen, available);
+        return new String(bytes, 1, strLen, charset);
     }
 
     public RandomAccess jumpAbs(int ofs) {

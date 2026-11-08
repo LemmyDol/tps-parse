@@ -1,0 +1,6 @@
+﻿Tables analyzed: 148
+Tables with rec_no gaps: 99
+Parity even-only: 17
+Parity odd-only: 5
+Parity mixed: 126
+Analysis CSV: D:\Label Pro\tps-parse\out-test\recno-analysis.csv
