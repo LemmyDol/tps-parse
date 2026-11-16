@@ -21,10 +21,14 @@ import java.util.List;
 
 import nl.cad.tpsparse.bin.RandomAccess;
 
+import org.joda.time.IllegalFieldValueException;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
 
 public class TableDefinitionRecord {
+
+    /** date/time fields filled with spaces (0x20) mean 'no value'. */
+    private static final long BLANK_FILL = 0x20202020L;
 
     private int driverVersion;
     private int recordLength;
@@ -128,11 +132,18 @@ public class TableDefinitionRecord {
         case 4:
             // Date, mask encoded.
             long date = rx.leULong();
-            if (date != 0) {
+            if (date != 0 && date != BLANK_FILL) {
                 long years = (date & 0xFFFF0000) >> 16;
                 long months = (date & 0x0000FF00) >> 8;
                 long days = (date & 0x000000FF);
-                return new LocalDate((int) years, (int) months, (int) days);
+                try {
+                    return new LocalDate((int) years, (int) months, (int) days);
+                } catch (IllegalFieldValueException ex) {
+                    // A single corrupt date must not abort the whole table.
+                    System.err.println("WARNING: invalid date in field '" + field.getFieldName() + "' (" + years + "-" + months + "-" + days
+                            + "), written as empty.");
+                    return null;
+                }
             } else {
                 return null;
             }
@@ -144,10 +155,18 @@ public class TableDefinitionRecord {
             // knowing how to decode these.
             //
             int time = rx.leLong();
+            if (time == (int) BLANK_FILL) {
+                return null;
+            }
             int mins = (time & 0x00FF0000) >> 16;
             int hours = (time & 0x7F000000) >> 24;
             //
-            return new LocalTime(hours, mins, 0, 0);
+            try {
+                return new LocalTime(hours, mins, 0, 0);
+            } catch (IllegalFieldValueException ex) {
+                System.err.println("WARNING: invalid time in field '" + field.getFieldName() + "' (" + hours + ":" + mins + "), written as empty.");
+                return null;
+            }
         case 6:
             // Long
             assertEqual(4, len);

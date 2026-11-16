@@ -99,6 +99,9 @@ public class Main {
         private boolean verbose = false;
     }
 
+    /** set when any file fails, so the process exits non-zero instead of reporting success. */
+    private static boolean failed = false;
+
     public static void main(String[] args) {
         Args params = new Args();
         JCommander cmd = new JCommander(params);
@@ -135,12 +138,18 @@ public class Main {
             }
             //
         } catch (IOException ex) {
+            failed = true;
             System.out.println("Error reading TPS file: " + ex.getMessage());
         } catch (UnsupportedCharsetException ex) {
+            failed = true;
             System.out.println("Unknown or unsupported characterset '" + ex.getCharsetName() + "'.");
         } catch (ParameterException ex) {
+            failed = true;
             System.out.println(ex.getMessage());
             cmd.usage();
+        }
+        if (failed) {
+            System.exit(1);
         }
     }
 
@@ -209,7 +218,8 @@ public class Main {
                 }
             }
         } catch (Exception ex) {
-            System.err.println(args.sourceFile.getName() + " : " + ex.getMessage());
+            failed = true;
+            System.err.println("FAILED: " + args.sourceFile.getName() + " : " + ex.getMessage());
             if (args.stackTraces) {
                 ex.printStackTrace();
             }
